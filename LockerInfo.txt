@@ -1,0 +1,22 @@
+Locker 003 contains:
+  - talong (Key: ZM1tf, Frequency: 1)
+  - another talong (Key: gntoe, Frequency: 2)
+
+Locker 004 contains:
+  - tv (Key: ggbFw, Frequency: 1)
+
+Locker 004 contains:
+  - phone (Key: dnBJM, Frequency: 1)
+  - car (Key: 3LYwy, Frequency: 1)
+
+Locker 111 contains:
+  - tv (Key: 2zf6Z, Frequency: 1)
+  - car (Key: Kywe6, Frequency: 1)
+
+Locker 444 contains:
+  - tv (Key: OwWG3, Frequency: 1)
+
+Locker 324 contains:
+Date: 12/01/24
+  - car (Key: 3O8dg, Frequency: 2)
+
