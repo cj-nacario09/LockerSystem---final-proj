@@ -58,18 +58,23 @@ public class MainLocker {
                     int y = Character.getNumericValue(lockerCode.charAt(1));
                     int z = Character.getNumericValue(lockerCode.charAt(2));
                     lockerSystem.storeItemsInLocker(x, y, z, itemList);
-
+               
                     // outputfile
+                    fileWriter.write("=======================================================");
+                    fileWriter.write("\nOwner: " + userName);
+                    
+                    Date thisDate = new Date();
+                    SimpleDateFormat dateform = new SimpleDateFormat("MM/dd/YY");
+                    String printdate = dateform.format(thisDate);
+
+                    System.out.println(printdate);
+                    fileWriter.write("\nDate: " + printdate + "\n\n"); 
+
                     fileWriter.write("Locker " + lockerCode + " contains:\n");
                     for (Items item : itemList){
 
-                        Date thisDate = new Date();
-                        SimpleDateFormat dateform = new SimpleDateFormat("MM/dd/YY");
-                        String printdate = dateform.format(thisDate);
-    
-                        System.out.println(printdate);
-                        fileWriter.write("Date: " + printdate + "\n"); 
-                        fileWriter.write("  - " + item.getName() + " (Key: " + item.getKey() + ", Frequency: " + item.getFrequency() + ")\n");
+                        fileWriter.write("  - " + item.getName() + " (Key: " + item.getKey() + ", No. of Items: " + item.getFrequency() + ")\n");
+                        fileWriter.write("=======================================================");
                     }
 
                     fileWriter.write("\n");
